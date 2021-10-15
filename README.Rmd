@@ -50,7 +50,7 @@ You can install the released version of ggsegNspn500 from [GitHub](https://githu
 remotes::install_github("ggseg/ggsegNspn500")
 ```
 
-```{r, fig.height=7}
+```{r, fig.height=12}
 library(ggseg)
 library(ggseg3d)
 library(ggsegNspn500)
@@ -58,7 +58,7 @@ library(ggsegNspn500)
 plot(nspn500) +
   theme(legend.position = "bottom", 
         legend.text = element_text(size = 9)) +
-  guides(fill = guide_legend(ncol = 6))
+  guides(fill = guide_legend(ncol = 5))
 
 ```
 
