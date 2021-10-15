@@ -2,3 +2,7 @@
 ^\.Rproj\.user$
 ^\.github$
 ^CODE_OF_CONDUCT\.md$
+data-raw
+pkgdown
+README*
+^LICENSE\.md$
