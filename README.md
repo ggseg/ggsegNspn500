@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/ggseg/ggsegNspn500/workflows/R-CMD-check/badge.svg)](https://github.com/ggseg/ggsegNspn500/actions)
+[![DOI](https://zenodo.org/badge/417535612.svg)](https://zenodo.org/badge/latestdoi/417535612)
+
 <!-- badges: end -->
 
 This package contains dataset for plotting the
@@ -50,6 +52,7 @@ remotes::install_github("ggseg/ggsegNspn500")
 
 ``` r
 library(ggseg)
+#> Warning: package 'ggseg' was built under R version 4.1.1
 #> Loading required package: ggplot2
 library(ggseg3d)
 library(ggsegNspn500)
