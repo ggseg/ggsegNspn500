@@ -1,65 +1,33 @@
 # ggsegNspn500
 
-This package contains dataset for plotting the NSPN500 atlas for ggseg.
-
-Whitaker, K. J., Vertes, P. E., Romero-Garcia, R., Vasa, F., Moutoussis,
-M., Prabhu, G., … & Tait, R. (2016). Adolescence is associated with
-genomically patterned consolidation of the hubs of the human brain
-connectome. Proceedings of the National Academy of Sciences, 113(32),
-9105-9110.
-
-Romero-Garcia, R., Atienza, M., Clemmensen, L. H., & Cantero, J. L.
-(2012). Effects of network resolution on topological properties of human
-neocortex. Neuroimage, 59(4), 3522-3532.
-
-To learn how to use these atlases, please look at the documentation for
-[ggseg](https://ggsegverse.github.io/ggseg/)
+NSPN500 Cortical Atlas for the ggsegverse Ecosystem.
 
 ## Installation
-
-We recommend installing the ggseg-atlases through the ggseg
-[r-universe](https://ggseg.r-universe.dev/ui#builds):
-
-``` r
-options(repos = c(
-  ggseg = "https://ggseg.r-universe.dev",
-  CRAN = "https://cloud.r-project.org"
-))
-
-install.packages("ggsegNspn500")
-```
-
-You can install from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegNspn500")
 ```
 
-## Example
+## Usage
 
 ``` r
 library(ggsegNspn500)
 library(ggseg)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = nspn500(),
-    mapping = aes(fill = label),
-    position = position_brain(hemi ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = nspn500()$palette, na.value = "grey") +
-  theme_void()
+plot(nspn500()) +
+  theme_brain()
 ```
 
-![](reference/figures/README-2d-plot-1.png)
+## Atlas
 
-Please note that the ‘ggsegNspn500’ project is released with a
-[Contributor Code of
-Conduct](https://ggsegverse.github.io/ggsegNspn500/CODE_OF_CONDUCT.md).
-By contributing to this project, you agree to abide by its terms.
+### nspn500
+
+NSPN500 cortical parcellation.
+
+![nspn500](reference/figures/nspn500_snapshot.png)
+
+nspn500
 
 # Package index
 
