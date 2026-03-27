@@ -5,6 +5,10 @@ NSPN500 Cortical Atlas for the ggsegverse Ecosystem.
 ## Installation
 
 ``` r
+# From r-universe
+install.packages("ggsegNspn500", repos = "https://ggsegverse.r-universe.dev")
+
+# From GitHub
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegNspn500")
 ```
