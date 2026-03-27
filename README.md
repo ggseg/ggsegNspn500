@@ -1,10 +1,19 @@
 # ggsegNspn500
 
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ggsegverse/ggsegNspn500/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegNspn500/actions/workflows/R-CMD-check.yaml)
+[![r-universe](https://ggsegverse.r-universe.dev/badges/ggsegNspn500)](https://ggsegverse.r-universe.dev/ggsegNspn500)
+<!-- badges: end -->
+
 NSPN500 Cortical Atlas for the ggsegverse Ecosystem.
 
 ## Installation
 
 ``` r
+# From r-universe
+install.packages("ggsegNspn500", repos = "https://ggsegverse.r-universe.dev")
+
+# From GitHub
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegNspn500")
 ```
