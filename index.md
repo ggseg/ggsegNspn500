@@ -32,3 +32,9 @@ NSPN500 cortical parcellation.
 ![nspn500](reference/figures/nspn500_snapshot.png)
 
 nspn500
+
+## Data source
+
+Annotation files on fsaverage5.
+
+- **Date obtained**: 2021-10-15
