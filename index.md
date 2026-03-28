@@ -13,28 +13,22 @@ install.packages("ggsegNspn500", repos = "https://ggsegverse.r-universe.dev")
 remotes::install_github("ggsegverse/ggsegNspn500")
 ```
 
-## Usage
-
-``` r
-library(ggsegNspn500)
-library(ggseg)
-
-plot(nspn500()) +
-  theme_brain()
-```
-
-## Atlas
+## Atlases
 
 ### nspn500
 
 NSPN500 cortical parcellation.
 
-![nspn500](reference/figures/nspn500_snapshot.png)
+``` r
+library(ggsegNspn500)
+plot(nspn500())
+```
 
-nspn500
-
-## Data source
+![](reference/figures/README-nspn500-1.png) \## Data source
 
 Annotation files on fsaverage5.
+
+- **Reference**: Whitaker et al. (2016)
+  [doi:10.1073/pnas.1601745113](https://doi.org/10.1073/pnas.1601745113)
 
 - **Date obtained**: 2021-10-15
