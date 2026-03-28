@@ -35,3 +35,9 @@ plot(nspn500()) +
 NSPN500 cortical parcellation.
 
 ![nspn500](man/figures/nspn500_snapshot.png)
+
+## Data source
+
+Annotation files on fsaverage5.
+
+- **Date obtained**: 2021-10-15
