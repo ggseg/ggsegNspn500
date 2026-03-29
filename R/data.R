@@ -17,4 +17,5 @@
 #' @export
 #' @examples
 #' nspn500()
+#' plot(nspn500())
 nspn500 <- function() .nspn500
