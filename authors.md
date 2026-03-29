@@ -11,13 +11,13 @@ Source:
 [`DESCRIPTION`](https://github.com/ggsegverse/ggsegNspn500/blob/main/DESCRIPTION)
 
 Mowinckel A (2026). *ggsegNspn500: NSPN500 Cortical Atlas for the
-'ggsegverse' Ecosystem*. R package version 2.0.1,
+'ggsegverse' Ecosystem*. R package version 2.0.2,
 <https://github.com/ggsegverse/ggsegNspn500>.
 
     @Manual{,
       title = {ggsegNspn500: NSPN500 Cortical Atlas for the 'ggsegverse' Ecosystem},
       author = {Athanasia Mo Mowinckel},
       year = {2026},
-      note = {R package version 2.0.1},
+      note = {R package version 2.0.2},
       url = {https://github.com/ggsegverse/ggsegNspn500},
     }
