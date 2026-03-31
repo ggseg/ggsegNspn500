@@ -5,6 +5,7 @@
 #' [ggseg::geom_brain()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Whitaker KJ, Vertes PE, Romero-Garcia R, et al. (2016).
 #'   Adolescence is associated with genomically patterned consolidation
