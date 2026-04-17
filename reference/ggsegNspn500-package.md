@@ -1,4 +1,4 @@
-# ggsegNspn500: NSPN500 Cortical Atlas for the 'ggseg' Ecosystem
+# ggsegNspn500: NSPN500 Cortical Atlas for the 'ggsegverse' Ecosystem
 
 NSPN500 cortical atlas for the 'ggseg' ecosystem. Provides a unified
 'ggseg_atlas' object with 2D polygon geometry for use with 'ggseg'.
