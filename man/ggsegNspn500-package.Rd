@@ -4,7 +4,7 @@
 \name{ggsegNspn500-package}
 \alias{ggsegNspn500}
 \alias{ggsegNspn500-package}
-\title{ggsegNspn500: NSPN500 Cortical Atlas for the 'ggseg' Ecosystem}
+\title{ggsegNspn500: NSPN500 Cortical Atlas for the 'ggsegverse' Ecosystem}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
