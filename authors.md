@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/ggsegverse/ggsegNspn500/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/ggsegverse/ggsegNspn500/blob/v2.0.2/DESCRIPTION)
 
 Mowinckel A (2026). *ggsegNspn500: NSPN500 Cortical Atlas for the
 'ggsegverse' Ecosystem*. R package version 2.0.2,
