@@ -1,34 +1,60 @@
 # ggsegNspn500
 
-NSPN500 Cortical Atlas for the ggsegverse Ecosystem.
+This package contains dataset for plotting the NSPN500 atlas for ggseg.
+
+Whitaker KJ, Vertes PE, Romero-Garcia R, Vasa F, Moutoussis M, Prabhu G,
+… & Tait R (2016). Adolescence is associated with genomically patterned
+consolidation of the hubs of the human brain connectome. *PNAS*,
+113(32), 9105-9110.
+
+Romero-Garcia R, Atienza M, Clemmensen LH, & Cantero JL (2012). Effects
+of network resolution on topological properties of human neocortex.
+*Neuroimage*, 59(4), 3522-3532.
 
 ## Installation
 
-``` r
-# From r-universe
-install.packages("ggsegNspn500", repos = "https://ggsegverse.r-universe.dev")
+We recommend installing the ggseg-atlases through the ggseg
+[r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-# From GitHub
-# install.packages("remotes")
-remotes::install_github("ggsegverse/ggsegNspn500")
+``` r
+options(repos = c(
+  ggseg = "https://ggseg.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
+
+install.packages("ggsegNspn500")
 ```
 
-## Atlases
-
-### nspn500
-
-NSPN500 cortical parcellation.
+You can install this package from [GitHub](https://github.com/) with:
 
 ``` r
+# install.packages("pak")
+pak::pak("ggsegverse/ggsegNspn500")
+```
+
+## NSPN500 atlas
+
+``` r
+library(ggseg)
 library(ggsegNspn500)
-plot(nspn500())
+library(ggplot2)
+
+ggplot() +
+  geom_brain(
+    atlas = nspn500(),
+    mapping = aes(fill = label),
+    position = position_brain(hemi ~ view),
+    show.legend = FALSE
+  ) +
+  scale_fill_manual(values = nspn500()$palette, na.value = "grey") +
+  theme_void()
 ```
 
-![](reference/figures/README-nspn500-1.png) \## Data source
+![](reference/figures/README-nspn500-1.png)
 
-Annotation files on fsaverage5.
+## Data source
 
-- **Reference**: Whitaker et al. (2016)
-  [doi:10.1073/pnas.1601745113](https://doi.org/10.1073/pnas.1601745113)
-
-- **Date obtained**: 2021-10-15
+Whitaker KJ, Vertes PE, Romero-Garcia R, Vasa F, Moutoussis M, Prabhu G,
+… & Tait R (2016). Adolescence is associated with genomically patterned
+consolidation of the hubs of the human brain connectome. *PNAS*,
+113(32), 9105-9110.
