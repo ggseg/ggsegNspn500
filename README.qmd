@@ -64,6 +64,7 @@ pak::pak("ggsegverse/ggsegNspn500")
 #| label: nspn500
 #| fig-height: 12
 library(ggseg)
+library(ggsegNspn500)
 
 plot(nspn500())
 ```
