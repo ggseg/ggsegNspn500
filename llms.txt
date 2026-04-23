@@ -37,17 +37,8 @@ pak::pak("ggsegverse/ggsegNspn500")
 ``` r
 library(ggseg)
 library(ggsegNspn500)
-library(ggplot2)
 
-ggplot() +
-  geom_brain(
-    atlas = nspn500(),
-    mapping = aes(fill = label),
-    position = position_brain(hemi ~ view),
-    show.legend = FALSE
-  ) +
-  scale_fill_manual(values = nspn500()$palette, na.value = "grey") +
-  theme_void()
+plot(nspn500())
 ```
 
 ![](reference/figures/README-nspn500-1.png)
