@@ -1,44 +1,62 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ggsegNspn500
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+# ggsegNspn500 <img src='man/figures/logo.png' align="right" height="138.5" />
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ggsegverse/ggsegNspn500/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegNspn500/actions/workflows/R-CMD-check.yaml)
-[![r-universe](https://ggsegverse.r-universe.dev/badges/ggsegNspn500)](https://ggsegverse.r-universe.dev/ggsegNspn500)
+[![R-CMD-check](https://github.com/ggsegverse/ggsegNspn500/workflows/R-CMD-check/badge.svg)](https://github.com/ggsegverse/ggsegNspn500/actions)
+[![DOI](https://zenodo.org/badge/417535612.svg)](https://zenodo.org/badge/latestdoi/417535612)
 <!-- badges: end -->
 
-NSPN500 Cortical Atlas for the ggsegverse Ecosystem.
+This package contains dataset for plotting the NSPN500 atlas for ggseg.
+
+Whitaker, K. J., Vertes, P. E., Romero-Garcia, R., Vasa, F., Moutoussis,
+M., Prabhu, G., … & Tait, R. (2016). Adolescence is associated with
+genomically patterned consolidation of the hubs of the human brain
+connectome. Proceedings of the National Academy of Sciences, 113(32),
+9105-9110.
+
+Romero-Garcia, R., Atienza, M., Clemmensen, L. H., & Cantero, J. L.
+(2012). Effects of network resolution on topological properties of human
+neocortex. Neuroimage, 59(4), 3522-3532.
+
+To learn how to use these atlases, please look at the documentation for
+[ggseg](https://ggsegverse.github.io/ggseg/)
 
 ## Installation
 
-``` r
-# From r-universe
-install.packages("ggsegNspn500", repos = "https://ggsegverse.r-universe.dev")
+We recommend installing the ggseg-atlases through the ggseg
+[r-universe](https://ggseg.r-universe.dev/ui#builds):
 
-# From GitHub
+``` r
+options(repos = c(
+  ggseg = "https://ggseg.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
+
+install.packages("ggsegNspn500")
+```
+
+You can install from [GitHub](https://github.com/) with:
+
+``` r
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegNspn500")
 ```
 
-## Atlases
-
-### nspn500
-
-NSPN500 cortical parcellation.
+## Example
 
 ``` r
 library(ggsegNspn500)
+library(ggseg)
+
 plot(nspn500())
 ```
 
-<img src="man/figures/README-nspn500-1.png" alt="" width="100%" /> \##
-Data source
+<img src="man/figures/README-2d-plot-1.png" style="width:100.0%" />
 
-Annotation files on fsaverage5.
-
-- **Reference**: Whitaker et al. (2016)
-  [doi:10.1073/pnas.1601745113](https://doi.org/10.1073/pnas.1601745113)
-
-- **Date obtained**: 2021-10-15
+Please note that the ‘ggsegNspn500’ project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to
+this project, you agree to abide by its terms.
