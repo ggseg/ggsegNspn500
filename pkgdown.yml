@@ -1,8 +1,8 @@
-pandoc: 3.1.11
+pandoc: 3.8.3
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles: {}
-last_built: 2026-04-26T10:43Z
+last_built: 2026-06-22T16:26Z
 urls:
   reference: https://ggsegverse.github.io/ggsegNspn500/reference
   article: https://ggsegverse.github.io/ggsegNspn500/articles
