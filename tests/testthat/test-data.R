@@ -9,18 +9,9 @@ describe("nspn500 atlas", {
   })
 
   it("renders with ggseg", {
-    p <- ggplot2::ggplot() +
-      ggseg::geom_brain(
-        atlas = nspn500(),
-        mapping = ggplot2::aes(fill = label),
-        position = ggseg::position_brain(hemi ~ view),
-        show.legend = FALSE
-      ) +
-      ggplot2::scale_fill_manual(
-        values = nspn500()$palette,
-        na.value = "grey"
-      ) +
-      ggplot2::theme_void()
-    vdiffr::expect_doppelganger("nspn500-2d", p)
+    vdiffr::expect_doppelganger(
+      "nspn500-2d",
+      ggseg::brain_test_plot(nspn500())
+    )
   })
 })
